@@ -198,7 +198,7 @@ img{
 }
 .acerca-img{
     width: 40%;
-    height: 100%;
+    height: 40%;
 }
 .acerca-img img{
     width: 100%;
@@ -251,7 +251,7 @@ img{
   margin: 50px 0px;
   font-size:50px;
   color:#9e579d;
-  font-size: 300;
+  font-weight: 300;
 }
 .content-cards{
     width: 100%;
@@ -263,7 +263,7 @@ img{
 .content-cards .card{
     position: relative;
     width: 300px;
-    height: 300;
+    height: 300px;
     background:#000 ;
     margin: 20px;
     border-radius: 10px;
@@ -279,6 +279,7 @@ img{
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: #000;
     border-radius: 10px;
@@ -304,4 +305,297 @@ img{
     object-fit: cover;
     transition: 1s;
     clip-path: polygon(0 0,100% 0, 100% 100%,0 100%,0% 50%);
+}
+.content-cards .card:hover img{
+    clip-path: polygon(100% 0,100% 0, 100% 100%,100% 100%, 100% 50%);
+}
+
+ /* fundadores */
+
+.fundadores{
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    height: 100vh;
+}
+.fundadores > h2{
+    position: absolute;
+    top: 20px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+}
+.content-fundadores{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.fundadores .clara-container{
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    background: #9e579d;
+    cursor: pointer;
+}
+.fundadores .clara-container:hover{
+    flex-grow: 5;
+}
+.fundadores .clara-container .card{
+    max-width: 300px;
+    text-align: center;
+    transition:0.5s ;
+}
+.clara-container .card .clara-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.clara-container .card .clara-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clara-container .card h2{
+    margin: 30px 0px;
+    color: #fff;
+    font-weight: 300;
+}
+.clara-container .card > a{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius:5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+.clara-container .card > a:hover{
+    background: #ffedff;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+}
+
+/**************Jesus Funn******/
+
+.fundadores .jesus-container{
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    background: #fc85ae;
+    cursor: pointer;
+}
+.fundadores .jesus-container:hover{
+    flex-grow: 5;
+}
+.fundadores .jesus-container .card{
+    max-width: 300px;
+    text-align: center;
+    transition:0.5s ;
+}
+.jesus-container .card .jesus-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.jesus-container .card .jesus-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.jesus-container .card h2{
+    margin: 30px 0px;
+    color: #fff;
+    font-weight: 300;
+}
+.jesus-container .card > a{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius:5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+.jesus-container .card > a:hover{
+    background: #ffedff;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+}
+footer {
+    background: url();
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .boxForm{
+    width: auto;
+    height: auto;
+    padding: 50px;
+    background: #303a52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.boxForm h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.boxForm label{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: uppercase;
+}
+.boxForm input{
+    margin:10px 0px 20px 0px ;
+    padding: 0px 20px;
+    width: 700px;
+    height: 40px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid #fc85ae;
+    font-size: 15px;
+    background: #303a52;    
+}
+.boxForm input:focus{
+    background: #fff;
+    color: #000;
+    transition: 0.25s;
+}
+.boxForm input::placeholder{
+    color:#fff;
+}
+.boxForm textarea{
+    width: 700px;
+    height: 120px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid #fc85ae;
+    font-size: 15px;
+    background: #303a52;
+    padding: 10px;
+}
+.boxForm textarea:focus{
+    background: #fff;
+    color: #000;
+    transition: 0.25s;
+}
+.boxForm textarea::placeholder{
+    color:#fff;
+}
+.boxForm #send{
+    width: 120px;
+    height: 50px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid #574b90;
+    background:#fc85ae;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.boxForm #send a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.boxForm #send:hover{
+    border: 2px solid #fff;
+    background: #573b90;
+}
+
+/***responsive***/
+
+@media only screen and (max-width:912px){
+ .acerca-de{
+    padding: 20px;
+ }
+ .acerca-img{
+    width: 50%;
+    height: 500px;
+ }
+ .acerca-de .info h2{
+    font-size: 15px;
+ }
+ .acerca-de .info p{
+    font-size: 16px;
+ }
+ .team-pets h2{
+    font-size: 40px;
+ }
+ .content-cards .card{
+    width: 40%;
+    height: 400px;
+ }
+ .fundadores {
+    margin-top:50px;
+ }
+ .content-fundadores{
+    display: block;
+ }
+ .fundadores > h2{
+    position: static;
+    color: var(--color1);
+    margin-bottom: 20px;
+ }
+ .fundadores .clara-container{
+    padding: 50px 0px;
+    width: 100%;
+ }
+ .fundadores .jesus-container{
+    padding: 50px 0px;
+    width: 100%;
+ }
+ footer{
+    margin-top: -200px;
+ }
+ footer .boxForm{
+    width: 95%;
+ }
+ .boxForm input{
+    width: 100%;
+ }
+ .boxForm textarea{
+    width: 100%;
+ }
+ .boxForm h2{
+    font-size:40px ;
+ }
+}
+@media only screen and (max-width: 700px){
+  .acerca-img{width: 100%; height: 500px;}
 }
