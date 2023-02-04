@@ -179,8 +179,9 @@ header{
 .acerca-de{
     width: 100%;
     padding: 50px;
-    margin-top: 100px;
-    background:url(src/fondo2-nube.jpg)
+    margin-top:100px;
+    background:url(src/fondo2-nube.jpg);
+    background-size: contain;
     
 }
 .acerca-de .left{
@@ -188,6 +189,7 @@ header{
     display: flex;
     align-items: center;
     margin-bottom: 70px; 
+    padding-top: 100px
 }
 .acerca-de .right{
     width: 100%;
@@ -451,7 +453,7 @@ header{
     color: var(--color1);
 }
 footer {
-    background: url();
+    /* background: url(); */
     background-attachment: fixed;
     background-position:center;
     background-size: cover;
